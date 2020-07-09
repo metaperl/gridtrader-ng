@@ -1,0 +1,40 @@
+[admin]
+email: bill@company.ca,mike@company.ca
+smtpServer: localhost
+
+[sanitycheck]
+allowableDrop: 30
+allowableGain: 30
+
+[pairs]
+# Space-separated list of markets to trade
+# Put the name of the btc_$market in the URL. For example for the URL
+# https://poloniex.com/exchange#btc_strat
+# you would put strat below
+pairs: dash strat
+
+[initialcorepositions]
+dash: 6.9
+strat: 368
+
+[ReciprocalSell]
+majorLevel: 1
+
+[ReciprocalBuy]
+majorLevel: 0.5
+
+[sellgrid]
+majorLevel: 1
+size: 100
+numberOfOrders: 4
+increments: 1
+
+[buygrid]
+majorLevel: 1
+size: 40
+numberOfOrders: 4
+increments: 4
+
+[api]
+key: XXXXX-YYYYY-ZZZZ
+secret: zbc123
